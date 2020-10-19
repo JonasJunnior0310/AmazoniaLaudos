@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Main from './main'
 import PDF from './PDF'
+import INFOS from './PDFInfos'
 
 import '../styles/App.css';
-
-// import { Switch, Route } from 'react-router-dom'
 
 class App extends Component {
   constructor(props){
@@ -29,6 +28,7 @@ class App extends Component {
       <Switch>
         <Route exact path="/" render={props => (<Main {...props} changeAlert={this.changeAlertNumber}></Main>)} />
         <Route exact path="/pdf/test" render={props => (<PDF {...props} alertNumber={this.state.alertNumber}></PDF>)} />
+        <Route exact path="/pdfs/pdfinfos" render={props => (<INFOS {...props} test="hello world!"></INFOS>)} />
       </Switch> 
     )
   }

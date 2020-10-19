@@ -105,7 +105,7 @@ class PDF extends Component {
                         </View>
                     </Page>
 
-                    {/* <Page size="A4" orientation="landscape" style={styles.page}>
+                    <Page size="A4" orientation="landscape" style={styles.page}>
                         <View id="title" style={styles.title} fixed="true">
                             <Text style={{fontSize: 15}}>Laudo referente ao MAPBIOMAS 32</Text>
                         </View>
@@ -315,7 +315,7 @@ class PDF extends Component {
                                 Proin sodales justo nunc, eget mollis velit elementum sit amet. Sed a felis nisl.
                             </Text>
                         </View>
-                    </Page> */}
+                    </Page>
                 </Document>
             </PDFViewer>
         )
