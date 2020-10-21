@@ -4,14 +4,15 @@ import './styles/index.css';
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
 
-import { ApolloProvider } from 'react-apollo';
-import { ApolloClient, InMemoryCache, HttpLink, gql } from "apollo-boost";
+import { ApolloProvider} from 'react-apollo';
+import { ApolloClient, InMemoryCache, HttpLink } from "apollo-boost";
 import { BrowserRouter } from 'react-router-dom'
 import { setContext } from 'apollo-link-context'
 import { AUTH_TOKEN } from './constants'
 
 import { ThemeProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core'
+
 
 const link = new HttpLink({
   uri : "https://plataforma.alerta.mapbiomas.org/api/graphql"
@@ -43,13 +44,13 @@ let theme = createMuiTheme({
 })
 
 ReactDOM.render(
-  <ApolloProvider client={mbAPI}>
-    <BrowserRouter>
-    <ThemeProvider theme={theme}>
-      <App/>
-    </ThemeProvider>
-    </BrowserRouter>
-  </ApolloProvider>,
+  <BrowserRouter>
+        <ThemeProvider theme={theme}>
+          <ApolloProvider client={mbAPI}>
+          <App client={mbAPI}/>
+          </ApolloProvider>
+        </ThemeProvider>
+    </BrowserRouter>,
   document.getElementById('root')
 );
 

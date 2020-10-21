@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "amzprotege",
+  "private_key_id": "0f0580108eb4e6432d6f481dc76c01be649bbd6c",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWCvFiPMS2V1jw\nN+toVm4q8Ey1pcZGtRTfBvVyQyWiwIrnLdJpwXh0EcJXn2YiNA7JwU0WZIO+wR8e\nEFH1mftOz6QB4BsoupokTVErliwJ+y5B/6AFv/vK4APWv7lhE/nwuqCgnSvbPJwm\nF7iL8AGaOpE7Tuo9dF/fY5KUtQit/S8wTf79hOQfxo5XaYHxdbOi7YnIhjcIetLW\nucxrKqYOgYe5DJgLxMFhcPtcI187cJdCnuQKL6VRHS81VPjqQe3ryA+qbo1nvSSF\nILJrsiYnWpO2FQ8t+34vIVR34RxPCkg09ZtasjMDOTxPIRnaKQn/JPP8HC/LX8Kd\nXw9TvZJNAgMBAAECggEAG1UZ/MXKJddKldPx97tK7VqB9tMgh+/jwe8QFkUCHaBK\njWts+aPrT+WOTAz2+4MVMI6cfthHoZ+njf/2FjH7NDOiEk9jUyuO+c712uVL13Og\nzRgGbBW5hg8B1ARv/i236bDtouSOwSzM2ymWDjPl7tT9cNri09gXwOdwI9PIpX0C\nyb0VeN4TNNQ5oC+/xsqHTjJMsH0kSUPlsCP32oy3gyr5qobHQw+8jHsOJULttHdD\ntD1yGc00LVDrmZ4BlCMMAxyLb3BBqBDtZDr0JCYwmN/GP1+hyS5l7LaZD85kLneV\n0aiLYnMoLlC8Or4EtZtFiDrP+lVA0NksZwUd82EAUQKBgQDHbAt+b6ngqQYjKUO1\nUAtpeOzooyh7Hm9mdA/7YtA/Qlt/J/spl57WJ1PTfmdZLsu8lm4wKmxx6eHhn5Ef\nTFl/i0IeT+uRRGouQuxRKWnNNzvLciuFWggEOy/0KXZEjWd39idl0Xj5ARf1CVL1\nhcremremwAqgqhb1IxlP02dF5QKBgQDAnH79LudlOcIBpjjBhaaADorKaEMNgfoI\nry4fEytzROgIr0ApKdCwvGaV2jdYKGRkZwLcRI+DKTG9vjclZ6SlWqWEVieSBO0u\nvJhcmoDxCI68GpKB85jrWmBvfXx66QV/8ijcBXm23LPfxEWoI29PdbPrp3OKboiq\nemaUCTXUSQKBgAcaI/amx2gG3P8Xkx+78AwbkGRgmyp3VQRTEdakGEKIfHW02M8M\nZU2/LM8Va1zTu9HFkbsJZ79O0wqUAjkZIP7X2Mz3j64mv5lSLNRfIzN5yhlewYoI\nQMzVxsltSJb8ajjtfU20/hfwIAhMArZXw3fWDsBTio1aQWMNkvMy1jS5AoGBAJ1R\nNQdl/+lVu3fNZB3sI4oEVqfrcJjfyHC/ZFRNO/fyF/K/8Q+t753qw38xtHJ0y0qW\nOGfgN7dRNidb7X7HoFrOJtJn6/n/vBmoQGmiaB52dt58dZ1ecVAJiSqGu91H5g4S\no/zRHBCXQvNJQ/uItamY4VNgeaZfkZBsWMwgma7BAoGAVX3/Fmodc0ac3TKORZKE\nuuJ0uAtabztI5Od1YY5y+BrJvTuW3TplY4VDDjFsfnCAcf2Q0YcDvLfIC9xV+khg\n15TYP5JGsCVUjoBCEQdODoB0/66WuQrv7GFIYt+8ntHX9pbZIWHi7TFGJXHbVce1\nURhEYRopLLBj1Uv+TbDOv5c=\n-----END PRIVATE KEY-----\n",
+  "client_email": "amzprotegeadmin@amzprotege.iam.gserviceaccount.com",
+  "client_id": "118240308949206304881",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/amzprotegeadmin%40amzprotege.iam.gserviceaccount.com"
+}

@@ -1,46 +1,22 @@
-import React, {Component, useState} from 'react'
+import React, { Component } from 'react'
 import { Query } from 'react-apollo';
 import gql from 'graphql-tag';
 import  {AUTH_TOKEN} from '../constants'
-import { useHistory, Route, Switch, BrowserRouter, Link } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 
 import { withStyles } from '@material-ui/core/styles'
 import { Typography, Grid, Card, CardContent, TextField, Button } from '@material-ui/core'
 import { Search, ChevronLeft , ChevronRight} from '@material-ui/icons'
 
-import PDF from './PDF'
-
 const requestStyle = theme => ({
     warningText: {
         fontFamily: "Ropa Sans",
         textAlign: "center",
-        // margin: "auto",
         fontSize: "1.5rem",
         height: "100%"
     }
 })
 
-// const alertInfo = gql `
-// query ($alertCode: String!){
-//     alertReport (alertId: $alertCode){
-//         alertCode
-//         images{
-//             before{
-//                 acquiredAt
-//                 satellite
-//                 url
-//             }
-//             after{
-//                 acquiredAt
-//                 satellite
-//                 url
-//             }
-//         }
-//         areaHa
-//         carCode
-//     }
-// }
-// `
 
 function NotLoggedIn(props){
     return(       
@@ -54,7 +30,7 @@ function NotLoggedIn(props){
 function LoggedIn(props){
     const alerts = gql`
         { 
-            allPublishedAlerts(limit:30){
+            allPublishedAlerts(startDetectedAt:"01/01/2020" limit:24){
                 alertCode
                 detectedAt
             }
@@ -95,8 +71,8 @@ function LoggedIn(props){
                                 <Grid container item spacing={2} direction="row" style={{width: "85%", margin: "10px auto"}}>
                                     {data.allPublishedAlerts.map(infos => 
                                         <Grid item xs={2} key={infos.alertCode}>
-                                            <a href="./pdf/test" >
-                                                <Card style={{border: "1px solid black"}} onClick={() => changeAlert(infos.alertCode)}>
+                                            <Link to={"/pdf/alerta"}>
+                                                <Card style={{border: "1px solid black"}}>
                                                     <CardContent>
                                                         <Typography style={{fontFamily: "Ropa Sans"}}>
                                                             Alerta {infos.alertCode}
@@ -106,7 +82,7 @@ function LoggedIn(props){
                                                         </Typography>
                                                     </CardContent>
                                                 </Card>
-                                            </a>
+                                            </Link>
                                         </Grid>
                                     )}
                                 </Grid>
@@ -139,4 +115,4 @@ class Request extends Component{
     }
 }
 
-export default withStyles(requestStyle)(Request)
+export default withRouter(withStyles(requestStyle)(Request))
